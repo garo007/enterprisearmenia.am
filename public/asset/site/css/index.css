@@ -1,0 +1,1368 @@
+body>div{
+    position: relative;
+    z-index: 112;
+    background: #fff;
+}
+
+/*Slider-carousel*/
+
+.slider-carousel{
+    width:100%;
+}
+
+.slider-carousel>div{
+    position: relative;
+}
+
+.slider-carousel img{
+    width:100%;
+    max-height:748px;
+}
+
+.slider-carousel .owl-nav{
+    width:100%;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+
+.slider-carousel .owl-nav button span{
+    display:none;
+}
+
+
+.slider-carousel .owl-nav button:after{
+    position:absolute;
+    top:0px;
+    content:"";
+    width:1vw;
+    height:1vw;
+    border-top:3px solid #fff;
+    border-radius:1px;
+    margin:0px 3vw;
+}
+
+.slider-carousel .owl-prev:after{
+    transform:rotate(-45deg);
+    border-left:3px solid #fff;
+    left:0;
+}
+
+.slider-carousel .owl-next:after{
+    transform:rotate(45deg);
+    border-right:3px solid #fff;
+    right:0;
+}
+
+.slide-text {
+    width: 100%;
+    position: absolute;
+    top: 67%;
+    transform: translate(-3%,-50%);
+    text-align: right;
+}
+
+.slide-text p{
+    text-transform: none!important;
+    font-size:3vw;
+    font: normal normal normal 35px Mardoto;
+    color:#fff;
+}
+
+.slide-text a.btn{
+    color: #fff;
+    border: 2px solid #FFFFFF;
+    background: transparent;
+    font: normal normal bold 20px Mardoto;
+    padding: 10px 15px;
+}
+
+@media only screen and (max-width:1200px){
+    .slide-text a.btn{
+        width: 163px;
+        height: 52px;
+        font: normal normal bold 15px/20px Mardoto;
+    }
+
+    .slide-text p{
+        font: normal normal normal 40px/30px Mardoto;
+    }
+}
+
+@media only screen and (max-width:900px){
+    .slide-text p{
+        font: normal normal normal 23px/20px Mardoto;
+    }
+
+    .slide-text a.btn{
+        border: 1px solid #FFFFFF;
+        width: 130px;
+        height: 35px;
+        font: normal normal normal 12px/20px Mardoto;
+    }
+}
+
+.slide-text a.btn:after{
+    content:" \2192";
+    color:#fff;
+}
+
+
+
+/*Our mission */
+
+.our-mission{
+    position:relative;
+    overflow: hidden;
+    z-index: 112;
+    background:#fff;
+}
+
+.our-mission>img{
+    height:50%;
+    height: 432px;
+    position:absolute;
+    top:0;right:0;
+    z-index: -1;
+}
+
+.mission-info{
+    width:80%;
+    margin:0 auto 50px auto;
+    display:flex;
+}
+
+.mission-info>div>h2{
+    font: normal normal bold 30px/72px Mardoto;
+}
+
+.mission-info>div>p{
+    font: normal normal normal 18px/29px Mardoto;
+}
+
+.mission-info>div{
+    flex-basis:50%;
+}
+
+.mission-containers{
+    width:70%;
+    margin:30px auto;
+    display:flex;
+    justify-content: space-around;
+    flex-flow: wrap;
+}
+
+.mission-containers>div{
+    background:#993944;
+    transition:0.2s ease;
+    width: 320px;
+    height: 320px;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.mission-containers>div:hover{
+    transform:scale(1.1);
+    transition:0.2s ease;
+    cursor:pointer;
+}
+
+.mission-containers img,
+.mission-containers p{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.mission-containers img {
+    width: 135px;
+    height: 135px;
+    top: 40px;
+}
+
+.mission-containers{
+    margin-top: 10px;
+}
+
+.mission-containers p{
+    width: 60%;
+    height: 86px;
+    color:#fff;
+    text-align: center;
+    font: normal normal normal 30px/35px Mardoto;
+    position: absolute;
+    bottom: 0px;
+}
+
+.mission-containers p a{
+    color:#fff;
+}
+
+
+@media only screen and (max-width:1740px){
+    .mission-info>div{
+        flex-basis: 50%;
+    }
+
+    .mission-containers {
+        width: 75%;
+    }
+}
+
+@media only screen and (max-width:1560px){
+    .our-mission>img {
+        right: -135px;
+    }
+
+    .mission-containers>div {
+        width: 275px;
+        height: 275px;
+    }
+
+    .mission-containers img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .mission-containers p {
+        font: normal normal normal 20px/25px Mardoto;
+        bottom: -25px;
+    }
+}
+
+@media only screen and (max-width:1345px){
+    .mission-containers img{
+        width:100px;
+        height:100px;
+    }
+
+    .mission-containers p{
+        font: normal normal normal 20px/25px Mardoto;
+        bottom:-15px;
+    }
+}
+
+@media only screen and (max-width:1320px) {
+    .mission-info > div {
+        flex-basis: 100%;
+        text-align: justify;
+    }
+}
+
+@media only screen and (max-width:1200px){
+    .mission-containers {
+        width: 80%;
+    }
+
+    .mission-containers>div{
+        margin: 0vw 1vw;
+    }
+
+    .mission-info>div{
+        flex-basis:100%;
+        text-align: justify;
+    }
+
+    .our-mission>img{
+        display:none;
+    }
+
+    .mission-info>div>h2 {
+        font: normal normal bold 32px/50px Mardoto;
+    }
+}
+
+@media only screen and (max-width:1150px){
+    .mission-containers p {
+        font: normal normal normal 17px/24px Mardoto;
+    }
+}
+
+@media only screen and (max-width:1040px){
+    .mission-containers>div{
+        height:25vw;
+    }
+
+    .mission-containers img {
+        width: 95px;
+        height: 95px;
+        top: 4vw;
+    }
+
+    .mission-containers p {
+        font: normal normal normal 16px/24px Mardoto;
+        bottom: -25px;
+    }
+}
+
+@media only screen and (max-width: 925px){
+    .mission-containers>div {
+        height: 230px;
+    }
+}
+
+@media only screen and (max-width: 865px){
+    .mission-containers p {
+        font: normal normal normal 14px/24px Mardoto;
+    }
+}
+
+@media only screen and (max-width:795px){
+    .mission-containers img {
+        width: 65px;
+        height: 65px;
+        top: 4vw;
+    }
+
+    .mission-containers>div {
+        height: 31vmin;
+    }
+
+    .mission-containers p {
+        font: normal normal normal 1.7vw/20px Mardoto;
+        bottom: -45px;
+    }
+}
+
+@media only screen and (max-width:705px){
+    .mission-info>div>h2 {
+        font: normal normal bold 32px/20px Mardoto;
+    }
+
+    .mission-info>div>p {
+        font: normal normal normal 17px/29px Mardoto;
+    }
+
+    .mission-containers img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .mission-containers p {
+        font: normal normal normal 2vw Mardoto;
+    }
+}
+
+@media only screen and (max-width:700px){
+    .mission-info>div>h2 {
+        font: normal normal bold 26px/35px Mardoto;
+    }
+
+    .mission-info>div>p {
+        font: normal normal normal 16px/28px Mardoto;
+    }
+
+    .mission-containers{
+        flex-direction: column;
+    }
+
+    .mission-containers>div{
+        margin: 15px auto;
+        width: 265px;
+        height: 265px;
+    }
+
+    .mission-containers img {
+        width: 110px;
+        height: 115px;
+        top: 35px;
+    }
+
+    .mission-containers p {
+        width: 60%;
+        height: 86px;
+        font: normal normal normal 18px Mardoto;
+        bottom: -15px;
+    }
+}
+
+/*tweets*/
+
+.tweets{
+    width:80%;
+    margin:0px auto;
+    display:flex;
+    height:35vw;
+    position: relative;
+    z-index: 112;
+    background:#fff;
+}
+
+.tweets>div{
+    flex-basis:100%;
+    width:50%;
+}
+
+.left-content{
+    margin-right:10px;
+}
+
+.right-content{
+    margin-left:4vw;
+}
+
+.head-info{
+    height:100px;
+    position:relative;
+}
+
+.head-info>h2{
+    text-transform: uppercase;
+    font: normal normal normal 22px Mardoto;
+    color: #922B35;
+}
+
+@media only screen and (max-width:400px){
+    .head-info > h2 {
+        font-size: 20px;
+    }
+}
+
+.by{
+    width:100%;
+    position:absolute;
+    bottom:2px;
+    left:0;
+}
+
+.by>.name{
+    font: normal normal normal 30px Mardoto;
+    letter-spacing: 0px;
+    color: #000000;
+}
+
+.by>.name+span,.nuyn{
+    font: normal normal normal 16px Segoe UI;
+    color: #707070;
+    margin-left:10px;
+}
+
+.info-icon{
+    width: 16px;
+    height: 22px;
+    position: absolute;
+    bottom: 0px;right: 0px;
+}
+
+.info-icon>img{
+    width:100%;
+}
+
+.head-info>*{
+    margin:0px;
+}
+
+.news-item{
+    display:flex;
+    margin-top:15px;
+    margin-bottom:35px;
+}
+
+.news-logo>img{
+    width: 53px;
+    height: 53px;
+    margin-right: 15px;
+}
+
+.news-info{
+    flex-basis: 100%;
+}
+
+.news-info p{
+    font: normal normal normal 14px/19px Mardoto;
+}
+
+.news-name{
+    font: normal normal bold 24px/29px Mardoto;
+    color:#000;
+}
+
+.news-img{
+    width:100%;
+    border-radius: 5px;
+}
+
+.news-img>img{
+    width:100%;
+}
+
+.exit{
+    margin-top:5px;
+}
+
+.exit span{
+    margin:0px 10px;
+    cursor:pointer;
+}
+
+.exit i{
+    color:#727272;
+    font-size: 25px;
+}
+
+.embed,.view{
+    color:#727272;
+    margin-top:5px;
+    cursor:pointer;
+    font: normal normal normal 16px/24px Segoe UI;
+}
+
+.view{
+    float:right;
+}
+
+.info-content-left{
+    border-top:2px solid #CCCCCC;
+    border-bottom:2px solid #CCCCCC;
+    padding:0px 10px;
+}
+
+.info-content-left, .info-content-right {
+    height: calc(100% - 125px);
+}
+
+.info-content-left{
+    overflow-y:scroll;
+}
+
+.tweets-footer{
+    font: normal normal normal 18px/24px Segoe UI;
+    letter-spacing: 0px;
+    color: #707070;
+    height:35px;
+}
+
+.ellipsis{
+    padding-left:10px;
+}
+
+.ellipsis i{
+    color:#707070;
+}
+
+.info-content-right{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.info-content-right>div{
+/*    border:1px solid;*/
+}
+
+.event{
+    height:calc(50% - 100px);
+    flex-basis: 45%;
+    margin-bottom:20px;
+    box-shadow: 0px 0px 10px #00000029;
+    border: 1px solid #C1C1C1;
+    display:flex;
+}
+
+.event-img{
+    flex-basis:291px;;
+    position:relative;
+    overflow:hidden;
+}
+
+/* .data-logo{
+    background: rgb(233,144,19);
+    -webkit-clip-path: polygon(0 0, 65% 0, 65% 73%, 0% 100%);
+    -ms-clip-path: polygon(0 0, 65% 0, 65% 73%, 0% 100%);
+    width: 75px!important;
+    height: 75px!important;
+    position: absolute!important;
+    margin-left: 1vw;
+} */
+
+.data-logo{
+    width: 60px!important;
+    height: 75px!important;
+    position: absolute!important;
+    margin-left: 0.5vw;
+    top: -8px;
+    overflow: hidden;
+}
+
+/* .data-logo>div{
+    position: absolute;
+    font-size: 14px;
+    color: #fff;
+    width: 59%;
+    margin: 15px auto;
+    text-align: center;
+} */
+
+.data-image{
+    width:100%;
+    height:100%;
+    position:absolute;
+}
+
+.data-logo>div{
+    position: absolute;
+    font-size: 13px;
+    color: #fff;
+    width: 20px;
+    text-align: center;
+    transform: translate(-70%,-50%);
+    top: 45%;
+    left: 48%;
+}
+
+.event-image{
+    object-fit: cover;
+    width: 200px!important;
+}
+
+.event-img>img:not(.data-logo){
+    width: 291px;
+    width: 100%;
+    height: 100%;
+    height:100%;
+}
+
+.event-info{
+    flex-basis:65%;
+    padding:0px 10px;
+    position:relative;
+}
+
+.event-info>h3{
+    font: normal normal bold 25px/40px Mardoto;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+.event-info>span{
+    font: normal normal normal 18px Segoe UI;
+    letter-spacing: 0px;
+    color: #707070;
+}
+
+.learn-more{
+    position:absolute;
+    bottom:0;
+    font: normal normal normal 22px/20px Mardoto;
+    letter-spacing: 0px;
+    color: #8B1C30;
+}
+
+.learn-more::after,.more-text::after{
+    content:" \2192";
+}
+
+.more-text{
+    font: normal normal normal 18px/15px Mardoto;
+    color: #8B1C30;
+    letter-spacing: 0px;
+    margin:0;
+}
+
+.more-text a{
+    color: #8B1C30;
+}
+
+@media only screen and (max-width:1735px){
+    .event-info>h3 {
+        font: normal normal bold 20px/30px Mardoto;
+        margin-bottom: 0px;
+    }
+
+    .event-info>span {
+        font: normal normal normal 16px Segoe UI;
+    }
+
+    .learn-more {
+        font: normal normal normal 19px/30px Mardoto;
+    }
+}
+
+@media only screen and (max-width:1400px){
+    .tweets-block{
+        padding-top:90px;
+        padding-bottom:150px;
+    }
+
+    .info-content-left, .info-content-right {
+        height: calc(100% - 50px);
+    }
+
+    .head-info {
+        height: 85px;
+    }
+
+    .by>.name {
+        font: normal normal normal 22px/35px Mardoto;
+    }
+
+    .exit i {
+        color: #727272;
+        font-size: 20px;
+    }
+
+    .learn-more {
+        font: normal normal normal 15px/29px Mardoto;
+    }
+
+    .event-info>span {
+        font: normal normal normal 17px Segoe UI;
+    }
+
+    .data-logo {
+        height: 75px;
+        left: 0px;
+    }
+
+    .event-img {
+        flex-basis: 250px;
+    }
+}
+
+@media only screen and (max-width:1350px){
+    .event-info>h3 {
+        font: normal normal bold 18px/25px Mardoto;
+    }
+
+    .learn-more {
+        font: normal normal normal 17px/29px Mardoto;
+    }
+
+    .news-name {
+        font: normal normal bold 20px/20px Mardoto;
+    }
+
+    .news-logo>img {
+        width: 45px;
+        height: 45px;
+        margin-right: 10px;
+    }
+
+    .by>.name+span, .nuyn {
+        font: normal normal normal 14px/10px Segoe UI;
+    }
+
+    .embed, .view {
+        font: normal normal normal 15px/24px Segoe UI;
+    }
+
+    .data-logo{
+        left: 0px;
+        height:60px;
+    }
+
+    .more-text {
+        font: normal normal normal 20px/15px Mardoto;
+    }
+}
+
+@media only screen and (max-width:1195px){
+    .tweets{
+        height:40vw;
+    }
+
+    .right-content {
+        margin-left: 3vw;
+    }
+
+    .event-img {
+        flex-basis: 210px;
+    }
+
+    .event-img>img:not(.data-logo) {
+        width: 100%!important;
+    }
+}
+
+@media only screen and (max-width:1140px){
+    .nuyn-data{
+        display:block;
+        margin-top:10px;
+    }
+}
+
+@media only screen and (max-width:1070px){
+    .tweets-block{
+        padding-bottom:40px;
+    }
+
+    .tweets{
+        width:75%;
+        flex-direction:column;
+        height:max-content;
+        padding:0px 0px;
+    }
+
+    .head-info>h2 {
+        font: normal normal normal 28px Mardoto;
+    }
+
+    .tweets>div{
+        flex-basis: 100%;
+        width: 100%;
+    }
+
+    .left-content{
+        height:60vw;
+        margin:0 0 20px 0;
+    }
+
+    .right-content{
+        height:60vw;
+        margin:50px 0 0 0;
+    }
+
+    .news-logo>img {
+        width: 53px;
+        height: 53px;
+        margin-right: 15px;
+    }
+
+    .info-content-left{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .info-content-left, .info-content-right{
+        height: calc(100% - 120px);
+    }
+
+    .info-content-right{
+        height:max-content!important;
+    }
+
+    .event{
+        height: 22vw;
+    }
+
+    .head-info{
+        height:85px;
+    }
+
+    .event-info>h3 {
+        font: normal normal bold 2.4vw/30px Mardoto;
+    }
+
+    .learn-more {
+        font: normal normal normal 22px/30px Segoe UI;
+    }
+
+    .event-info>span{
+        font: normal normal normal 17px Segoe UI;
+    }
+
+    .nuyn-data{
+        display:inline;
+        margin-top:0px;
+    }
+
+    .news-name {
+        font: normal normal bold 24px/27px Mardoto;
+    }
+
+    .by>.name+span, .nuyn {
+        font: normal normal normal 17px/10px Segoe UI;
+    }
+
+    .news-info p {
+        font: normal normal normal 17px/20px Mardoto;
+    }
+
+    .event-img {
+        flex-basis: 290px;
+    }
+
+    .data-logo {
+        left: 10px;
+        height: 80px;
+    }
+
+    .event-image{
+        width: 250px!important;
+    }
+}
+
+@media only screen and (max-width:920px){
+    .event-info>h3 {
+        font: normal normal bold 2.3vw/27px Mardoto;
+    }
+
+    .learn-more {
+        font: normal normal normal 18px/30px Segoe UI;
+    }
+}
+
+@media only screen and (max-width:880px){
+    .tweets-block{
+        padding-bottom:60px;
+    }
+
+    .tweets{
+        width:85%;
+    }
+
+    .news-info p {
+        font: normal normal normal 15px/20px Mardoto;
+    }
+
+    .info-content-left, .info-content-right {
+        height: calc(100% - 80px);
+    }
+
+    .data-logo {
+        height: 70px;
+    }
+
+    .event{
+        height:26vw;
+    }
+}
+
+@media only screen and (max-width:790px){
+    .event-info>span {
+        font: normal normal normal 16px Segoe UI;
+    }
+
+    .event{
+        height:30vw;
+    }
+}
+
+@media only screen and (max-width:715px){
+    .news-name {
+        font: normal normal bold 20px/27px Mardoto;
+    }
+
+    .by>.name+span, .nuyn {
+        font: normal normal normal 15px/10px Segoe UI;
+    }
+
+    .news-info p {
+        font: normal normal normal 14px/20px Mardoto;
+    }
+
+    .news-logo>img {
+        width: 45px;
+        height: 45px;
+        margin-right: 10px;
+    }
+}
+
+@media only screen and (max-width:675px){
+    .tweets{
+        width:95%;
+        margin-top: 0px;
+    }
+
+    .right-content {
+        height: 75vw;
+        margin: 60px 0 0 0;
+    }
+
+    .event{
+        height:32vw;
+    }
+
+    .event-info>h3 {
+        font: normal normal bold 2.7vw/27px Mardoto;
+    }
+}
+
+@media only screen and (max-width:585px){
+    .tweets-block{
+        padding-top:40px;
+        padding-bottom:20px;
+    }
+
+    .head-info {
+        height: 80px;
+    }
+
+    .left-content {
+        height: 90vw;
+        margin: 0 0 20px 0;
+    }
+
+    .right-content {
+        height: 90vw;
+        margin: 20px 0 0 0;
+    }
+
+    .info-content-left, .info-content-right {
+        height: calc(100% - 115px);
+    }
+
+    .head-info>h2 {
+        font: normal normal normal 24px/40px Mardoto;
+    }
+
+    .by>.name {
+        font: normal normal normal 24px/35px Mardoto;
+    }
+
+    .by>.name+span, .nuyn {
+        font: normal normal normal 15px/10px Segoe UI;
+    }
+
+    .event-img {
+        flex-basis: 200px;
+    }
+
+    .event-info>span {
+        font: normal normal normal 14px Segoe UI;
+    }
+
+    .learn-more {
+        font: normal normal normal 14px/15px Segoe UI;
+    }
+
+    .data-logo{
+        width:55px!important;
+        height:65px!important;
+        margin-left:-1vw;
+    }
+
+    .data-logo>div{
+        font-size:12px;
+        line-height: 15px;
+    }
+}
+
+@media only screen and (max-width:400px){
+    .event-info >h3{
+        font-size: 5vw;
+    }
+.news-logo{
+    width: 40px;
+}
+
+.news-logo>img{
+    width:100%;
+}
+
+.news-info .nuyn {
+    font-size: 10px;
+}
+
+}
+
+
+/*Slider*/
+
+.discover_armenia{
+    text-align: center;
+    font: normal normal normal 23px/43px Mardoto;
+    color: #922B35;
+    text-transform: uppercase;
+}
+
+.discover{
+    width: 80%;
+    margin:0 auto;
+/*    border:1px solid;*/
+    display: flex;
+}
+
+.discover>div {
+   margin: 0 auto;
+}
+
+.discover_img{
+    flex-basis:255px;
+    width: 255px;
+}
+
+.discover_img>img{
+    width: 255px!important;
+}
+
+.discover_info{
+    display:flex;
+    align-items: center;
+    padding-left:40px;
+    flex-basis:65%;
+}
+
+.discover_info h2{
+    font: normal normal bold 30px/43px Mardoto;
+}
+
+.discover_info p{
+    font: normal normal normal 20px/30px Mardoto;
+}
+
+.discover_info a.button{
+    display:inline-block;
+    background:transparent;
+    padding:8px 12px;
+    font: normal normal normal 15px Mardoto;
+    color: #8B1C30;
+    border: 2px solid #8B1C30;
+    font-weight:bold;
+    margin-right:10px;
+    transition:0.2s ease;
+}
+
+.discover_info a.button:hover{
+    border:1px solid #8B1C30;
+    background:#8B1C30;
+    color:#fff;
+    transition:0.2s ease;
+}
+
+@media only screen and (max-width:1500px){
+    .discover_info h2 {
+        font: normal normal bold 20px/20px Mardoto;
+    }
+
+    .discover_info p {
+        font: normal normal normal 15px/25px Mardoto;
+    }
+
+    .discover_info a.button {
+        font: normal normal normal 13px/17px Mardoto;
+        border:1px solid #8B1C30;
+    }
+}
+
+@media only screen and (max-width:1205px){
+    .discover_info {
+        display: flex;
+        /* padding-left:0px; */
+    }
+
+    .discover_info h2 {
+        font: normal normal bold 30px/10px Mardoto;
+        margin-top:20px;
+    }
+
+    .discover_info p {
+        font: normal normal normal 16px/30px Mardoto;
+    }
+
+    .discover_img>img {
+        /* width: 300px!important; */
+        margin: 0 20px 0 0;
+    }
+}
+
+
+@media only screen and (max-width:1000px){
+    .discover{
+        flex-wrap: wrap;
+        align-items:stretch;
+    }
+
+    .discover_armenia {
+        font: normal normal normal 30px/30px Mardoto;
+    }
+
+    .discover_img {
+        width: 100%!important;
+    }
+
+    .discover_img>img{
+        margin:0 auto;
+    }
+
+    .discover_info{
+        padding-left:0px;
+        flex-basis:inherit;
+    }
+
+    .discover_img {
+        flex-basis: auto;
+    }
+
+    .discover_info h2 {
+        font: normal normal bold 28px/35px Mardoto;
+        text-align: center;
+    }
+
+    .discover_info p {
+        width: 90%;
+        margin: 0 auto 30px auto;
+        font: normal normal normal 17px/22px Mardoto;
+        text-align:justify;
+    }
+
+    .discover>div>div{
+        text-align: center;
+    }
+
+    .discover_info a.button {
+        font: normal normal normal 12px/15px Mardoto;
+        border:1px solid #8B1C30;
+    }
+}
+
+
+/*for IE**/
+
+@media all and (-ms-high-contrast:none) and (max-width:1070px){
+    .tweets{
+        height:1300px;
+    }
+}
+
+@media all and (-ms-high-contrast:none) and (max-width:990px){
+    .aaa > img {
+        margin-right: 25px;
+    }
+}
+
+@media all and (-ms-high-contrast:none) and (max-width:880px){
+    .tweets{
+        height:1100px;
+    }
+}
+
+@media all and (-ms-high-contrast:none) and (max-width:820px){
+    .discover{
+        flex-direction:row;
+        flex-wrap:wrap;
+    }
+
+    .discover_info {
+        flex-basis: inherit;
+    }
+
+    .discover_img {
+        flex:0 0 0;
+    }
+}
+
+@media all and (-ms-high-contrast:none) and (max-width:450px){
+    .slider-carousel img {
+        width: 100%;
+        height: 80vw;
+    }
+
+    .slide-text p {
+        font: normal normal normal 16px/20px Mardoto;
+    }
+
+    .mission-info > div > h2 {
+        text-align: center;
+    }
+
+    .mission-containers > div {
+        margin: 10px auto;
+        width: 180px;
+        height: 180px;
+        position: relative;
+    }
+
+    .mission-containers img {
+        width: 65px;
+        height: 65px;
+        top: 25px;
+    }
+
+    .mission-containers p {
+        height: 86px;
+        font: normal normal normal 18px Mardoto;
+        bottom: -20px;
+    }
+
+    .head-info > h2 {
+        font: normal normal normal 15px Mardoto;
+    }
+
+    .by > .name {
+        font: normal normal normal 22px Mardoto;
+    }
+
+    .by > .name + span, .nuyn {
+        font: normal normal normal 13px/10px Segoe UI;
+        margin-left: 0px;
+    }
+
+    .embed, .view {
+        font: normal normal normal 14px/15px Segoe UI;
+    }
+
+
+    .event-img {
+        flex-basis: 150px;
+    }
+
+    .event-info > h3 {
+        font: normal normal bold 15px/19px Mardoto;
+    }
+
+
+    .discover_armenia {
+        font: normal normal normal 24px/30px Mardoto;
+    }
+
+    .discover_info h2 {
+        font: normal normal bold 20px/35px Mardoto;
+        text-align: center;
+    }
+
+    .discover_info a.button {
+        margin-bottom: 10px;
+    }
+
+    .flex-img {
+        align-items: center;
+        flex-direction: column;
+        flex-basis: auto;
+        margin:0;
+    }
+
+    .first-img{
+        margin-bottom:20px;
+    }
+
+    .ul-top > li {
+        font: normal normal normal 14px/25px Mardoto;
+    }
+
+}
+
+
+.hilitestyle{
+    color: #ffff00;
+}
+
+@font-face{
+    font-family:Segoe;
+    src:url("fonts/Segoe UI.ttf")
+    url("fonts/Segoe UI.woff")format("woff"),
+}
+@font-face{
+    font-family:Mardoto;
+    src:url("fonts/Mardoto-Regular.ttf");
+}
+
+@font-face{
+    font-family:Mardoto-medium;
+    src:url("fonts/Mardoto-Medium.ttf");
+}
+
+.share{
+    margin-top:50px;
+    display:flex;
+    justify-content: center;
+}
+
+
+.preloader{
+    position:fixed;
+    top:0px;
+    left:0px;
+    width:100%;
+    height:100%;
+    z-index:9999999999;
+    background:#fff;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
